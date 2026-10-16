@@ -1,0 +1,21 @@
+@PACKAGE_INIT@
+
+# Consume the change stream (libagora-watch), Agora's FSEvents.
+#
+# ITS ONE PUBLIC DEPENDENCY IS CORE FOUNDATION: the paths are a `CFArrayRef` and the latency a
+# `CFTimeInterval`. The reader thread and its lock are PRIVATE, so `Threads` is not found here — a consumer
+# does not inherit it.
+
+include(CMakeFindDependencyMacro)
+
+find_dependency(CoreFoundation CONFIG)
+
+if(CMAKE_C_COMPILER_ID STREQUAL "GNU")
+  message(FATAL_ERROR
+    "libagora-watch' interface brings Core Foundation's headers, which need -fblocks. This tree builds "
+    "with clang; configure with -DCMAKE_C_COMPILER=/usr/bin/clang-19.")
+endif()
+
+include("${CMAKE_CURRENT_LIST_DIR}/AgoraWatchTargets.cmake")
+
+check_required_components(AgoraWatch)
