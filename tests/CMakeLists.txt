@@ -1,3 +1,8 @@
+# Copyright © 2026 Kyle J. Cardoza.
+# SPDX-FileCopyrightText: 2026 Kyle J. Cardoza
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Portions of this file may derive from GNUstep; see THIRD-PARTY.md.
+
 # libagora-watch's own suite.
 #
 # THE MUTATIONS HAPPEN IN A HELPER PROCESS (a shell), not in the test: a change made by the same thread that

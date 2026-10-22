@@ -2,8 +2,10 @@
  * EventStream-inotify.c — the Linux backend: `inotify`, with a watch added for every directory under each
  * watched path so the tree is live.
  *
- * Copyright © 2026 Kyle J. Cardoza. MIT licensed — see LICENSE.
- * SPDX-License-Identifier: MIT
+ * Copyright © 2026 Kyle J. Cardoza.
+ * SPDX-FileCopyrightText: 2026 Kyle J. Cardoza
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ * Portions of this file may derive from GNUstep; see THIRD-PARTY.md.
  *
  * THERE IS NO SYSTEMD HERE, AND NOTHING TO LINK: `inotify` is the kernel's own interface, reached through
  * `inotify_init1` and `read`. The event vocabulary does not line up with FSEvents' one for one, so each

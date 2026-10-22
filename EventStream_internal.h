@@ -2,8 +2,10 @@
  * EventStream_internal.h — the stream object, and the seam between the platform-independent engine and the
  * per-platform backend.
  *
- * Copyright © 2026 Kyle J. Cardoza. MIT licensed — see LICENSE.
- * SPDX-License-Identifier: MIT
+ * Copyright © 2026 Kyle J. Cardoza.
+ * SPDX-FileCopyrightText: 2026 Kyle J. Cardoza
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ * Portions of this file may derive from GNUstep; see THIRD-PARTY.md.
  *
  * NOT INSTALLED AND NOT PUBLIC. `EventStream.c` owns the object, the reader thread, the coalescing and the
  * delivery. A BACKEND (`EventStream-inotify.c` on Linux, `EventStream-kqueue.c` on the BSDs) opens the

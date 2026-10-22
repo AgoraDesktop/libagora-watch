@@ -1,8 +1,10 @@
 /*
  * EventStream.c — the engine: the reader thread, the coalescing, and the delivery.
  *
- * Copyright © 2026 Kyle J. Cardoza. MIT licensed — see LICENSE.
- * SPDX-License-Identifier: MIT
+ * Copyright © 2026 Kyle J. Cardoza.
+ * SPDX-FileCopyrightText: 2026 Kyle J. Cardoza
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ * Portions of this file may derive from GNUstep; see THIRD-PARTY.md.
  *
  * THE ENGINE KNOWS NOTHING ABOUT INOTIFY OR KQUEUE. A backend opens a descriptor and calls `_AGWatchRecord`
  * for each change it reads; this file merges those changes into a PENDING batch keyed by path, and delivers
