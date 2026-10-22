@@ -4,7 +4,6 @@
  * Copyright © 2026 Kyle J. Cardoza.
  * SPDX-FileCopyrightText: 2026 Kyle J. Cardoza
  * SPDX-License-Identifier: LGPL-3.0-or-later
- * Portions of this file may derive from GNUstep; see THIRD-PARTY.md.
  *
  * THE MODEL IS APPLE'S FSEvents (WORKSPACE-PLAN.md §2, F3). A STREAM watches a set of paths, COALESCES the
  * changes that happen within a latency window into one event per path, and delivers them to a callback with

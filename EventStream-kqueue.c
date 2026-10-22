@@ -4,7 +4,6 @@
  * Copyright © 2026 Kyle J. Cardoza.
  * SPDX-FileCopyrightText: 2026 Kyle J. Cardoza
  * SPDX-License-Identifier: LGPL-3.0-or-later
- * Portions of this file may derive from GNUstep; see THIRD-PARTY.md.
  *
  * WRITTEN, AND NOT YET MEASURED ON A BSD — this tree is developed on Linux, where the suite exercises the
  * `inotify` backend and this file is not compiled. It is kept beside that one and selected by the build on
